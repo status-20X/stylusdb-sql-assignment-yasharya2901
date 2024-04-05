@@ -21,7 +21,8 @@ function parseWhereClause(whereString) {
     const conditions = whereString.split(/ AND | OR /i);
     return conditions.map(condition => {
         const [field, operator, value] = condition.split(/\s+/);
-        return { field, operator, value };
+        // return { field, operator, value };
+        return `${field} ${operator} ${value}`
     });
 }
 
