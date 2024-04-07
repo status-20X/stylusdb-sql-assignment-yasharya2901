@@ -1,5 +1,4 @@
-student_id,course
-1,Mathematics
-1,Physics
-2,Chemistry
-3,Mathematics
+id,name,age
+1,John,30
+2,Jane,25
+3,Bob,22
