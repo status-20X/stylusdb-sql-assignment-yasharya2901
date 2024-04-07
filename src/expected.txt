@@ -1,0 +1,14 @@
+{
+    fields: ['student.name', 'enrollment.course'],
+    table: 'student',
+    whereClauses: [{ field: 'student.age', operator: '>', value: '20' }],
+    joinTable: 'enrollment',
+    joinCondition: { left: 'student.id', right: 'enrollment.student_id' },
+    joinType: 'INNER'
+}
+
+function for select
+funciton for where
+funciton for join
+
+'SELECT student.name, enrollment.course FROM student INNER JOIN enrollment ON student.id = enrollment.student_id WHERE student.age > 20'
